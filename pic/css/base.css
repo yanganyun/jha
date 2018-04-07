@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-html{ font-size: 50px; }
+html{ font-size: 100px; }
 body{
     font-family: Roboto,"Droid Sans",Helvetica,"Helvetica Neue","Heiti SC",sans-serif; font-size: 0.24rem; color: #000;
 }
@@ -97,10 +97,14 @@ textarea:focus::-webkit-input-placeholder{
 img{ vertical-align: top;}
 .show{ display: block !important; }
 
-.page_w{ max-width: 1200px; margin:0 auto; position: relative;}
+.page_w{ max-width: 1280px; margin:0 auto; position: relative;}
 
 .nav_btn{ display: none; position: absolute; right: 15px; top: 18px; width: 34px; height: 38px; background-color: #000; padding: 0 10px; cursor: pointer; }
 .nav_btn i{ display: block; height: 2px; background-color: #fff; margin-top: 8px; }
+
+@media only screen and (max-width: 900px) {
+    html{ font-size: 60px; }
+}
 
 
 @font-face{

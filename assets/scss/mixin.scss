@@ -1,0 +1,33 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// mixin scss
+// 包括常用的mixin，%及@function
+// mixin，通过@include调用，样式通过拷贝的方式使用，尤其适用于传递参数
+// %，通过@extend调用，样式通过组合申明的方式使用，适用于不传参数的代码片段
+// @function，返回一个值，用于调用
+//-----------------------------------------------------
+
+// mixin & %
+// 既定义了mixin也定义了%，根据需求使用@include或@extend调用
+//-----------------------------------------------------
+//px转rem
+@function px($px) {
+  @return ($px/100) + rem;
+}
+
+@mixin dh1($name:all,$time:0.4s,$tyle:ease-out,$delayTime:0s) {
+  -webkit-transition:$name $time $tyle $delayTime;  //all表示所有属性都会执行动画，如果只让宽度运动就写width；
+  transition:$name $time $tyle $delayTime; 
+}
+@mixin translate($x:0,$y:0) {
+  -webkit-transform: translate($x,$y);
+  transform: translate($x,$y);
+}
+@mixin rotate($deg:0deg) {
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}
+@mixin scale($scale:1) {
+  -webkit-transform: scale($scale);
+  transform: scale($scale);
+}

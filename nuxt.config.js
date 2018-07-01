@@ -30,8 +30,8 @@ module.exports = {
     { src: '~/assets/js/plugins/swiper-3.4.2.min.js', ssr: false }
   ],
   css: [
-    {src:'~/assets/scss/plugins/swiper.min.css',lang:'css'},
-    {src:'~/assets/scss/base.scss',lang:'scss'}
+    '~/assets/scss/plugins/swiper.min.css',
+    '~/assets/scss/base.scss'
   ],
   render: {
     resourceHints:false

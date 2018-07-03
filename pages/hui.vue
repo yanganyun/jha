@@ -31,17 +31,8 @@
 
 
     <div class="hui_list_box clearfix">
-      <ul class="hui_list hui_list1 clearfix">
-        <li v-for="item in 4" :key="item">
-          <img src="~/static/img/hui/list1_1.jpg" alt="">
-          <div class="info_box">
-            <h4>大酒店時間</h4>
-            <p>上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝</p>
-          </div>
-        </li>
-      </ul>
-      <ul class="hui_list hui_list2 clearfix">
-        <li v-for="item in 3" :key="item">
+      <ul class="hui_list hui_list3 clearfix">
+        <li v-for="item in 7" :key="item">
           <img src="~/static/img/hui/list1_1.jpg" alt="">
           <div class="info_box">
             <h4>大酒店時間</h4>
@@ -167,7 +158,7 @@ export default {
         }
       }
       .hui_list1{
-        width: 40%;
+        width: 39.8%;
         li{
           width: 48%;
           margin:1% 1%;
@@ -178,9 +169,21 @@ export default {
         li{
           &:first-child{
             width: 65%;
+            margin:0.5% 0.84%;
           }
-          width: 31%;
+          width: 31.3%;
           margin:1% 1%;
+        }
+      }
+      .hui_list3{
+        width: 100%;
+        li{
+          &:first-child{
+            width: 39%;
+            margin:0.5% 0.5%;
+          }
+          width: 19%;
+          margin:0.5% 0.44%;
         }
       }
     }

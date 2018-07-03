@@ -5,8 +5,7 @@
     <!-- 板块1 -->
     <div class="banner_box swiper-container" id="home_banner1">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="~/static/img/home/banner1_1.jpg" width="100%" alt="">
+        <div class="swiper-slide swiper-slide1">
           <div class="banner_bg"></div>
           <div class="banner_info_box">
             <div class="banner_info">
@@ -16,8 +15,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <img src="~/static/img/home/banner1_1.jpg" width="100%" alt="">
+        <div class="swiper-slide swiper-slide2">
           <div class="banner_bg"></div>
           <div class="banner_info_box">
             <div class="banner_info">
@@ -27,8 +25,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <img src="~/static/img/home/banner1_1.jpg" width="100%" alt="">
+        <div class="swiper-slide swiper-slide3">
           <div class="banner_bg"></div>
           <div class="banner_info_box">
             <div class="banner_info">
@@ -47,8 +44,7 @@
     <!-- 板块2 -->
     <div class="banner_box swiper-container banner2" id="home_banner2">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="~/static/img/home/banner2_list1_bg.jpg" width="100%" alt="">
+        <div class="swiper-slide swiper-slide1">
           <div class="banner_info_box">
             <div class="banner_info">
               <span class="banner_tag"></span>
@@ -82,8 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <img src="~/static/img/home/banner2_list1_bg.jpg" width="100%" alt="">
+        <div class="swiper-slide swiper-slide2">
           <div class="banner_info_box">
               <div class="banner_info">
               <span class="banner_tag"></span>
@@ -117,8 +112,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <img src="~/static/img/home/banner2_list1_bg.jpg" width="100%" alt="">
+        <div class="swiper-slide swiper-slide3">
           <div class="banner_info_box">
             <div class="banner_info">
               <span class="banner_tag"></span>
@@ -161,61 +155,86 @@
 
     <!-- 板块3  关于我们 -->
     <div class="aboutus">
-      <img src="~/static/img/home/aboutus.jpg" width="100%" alt="">
+      <div class="about_logo"></div>
+      <h3><span>关于我们</span></h3>
+      <p>"JHA DESIGN专注建筑改造及室内空间设计项目及关联产品。<br>
+ 服务于卓越企业、国际国内酒店管理集团、私人客户，<br>
+产品包含：商旅度假酒店、总部办公、商业展示、度假别墅；<br>
+提供改造优化、空间设计、设备专业协调、软装配置、现场督导的全程服务。<br>
+并开展“集跃创造” “尤物定制”的研发建造与市场运营。"</p>
+      <div class="aboutus_icon">
+        <img src="~/static/img/home/aboutus_icon.png" alt="">
+      </div>
     </div>
 
     <!-- 板块4  设计团队 -->
     <div class="team">
       <h3><span>设计团队</span></h3>
-      <ul class="team_list">
-        <li>
-          <img src="~/static/img/team/jiangxiaran.jpg" alt="">
-          <b>蒋夏然</b>
-          <p>董事 / 设计总监</p>
-        </li>
-        <li>
-          <img src="~/static/img/team/qiuliang.jpg" alt="">
-          <b>蒋夏然</b>
-          <p>董事 / 项目总监</p>
-        </li>
-        <li>
-          <img src="~/static/img/team/qiuliang.jpg" alt="">
-          <b>蔡蕴</b>
-          <p>合伙人 / 主案设计</p>
-        </li>
-        <li>
-          <img src="~/static/img/team/qiuliang.jpg" alt="">
-          <b>曹呈祥</b>
-          <p>合伙人 / 客户总监</p>
-        </li>
-      </ul>
+      <div class="home_team swiper-container" id="home_team">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <ul class="team_list">
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>蒋夏然</b>
+                <p>董事 / 设计总监</p>
+              </li>
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>蒋夏然</b>
+                <p>董事 / 项目总监</p>
+              </li>
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>蔡蕴</b>
+                <p>合伙人 / 主案设计</p>
+              </li>
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>曹呈祥</b>
+                <p>合伙人 / 客户总监</p>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="team_list">
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>蒋夏然</b>
+                <p>董事 / 设计总监</p>
+              </li>
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>蒋夏然</b>
+                <p>董事 / 项目总监</p>
+              </li>
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>蔡蕴</b>
+                <p>合伙人 / 主案设计</p>
+              </li>
+              <li>
+                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
+                <b>曹呈祥</b>
+                <p>合伙人 / 客户总监</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-black"></div>
+        <div class="swiper-button-next swiper-button-black"></div>
+      </div>
     </div>
     
     <!-- 板块5  底部 -->
-    <div class="footer_all">
-      <div class="footer">
-        <h3><span>联系我们</span></h3>
-        <p class="footer_nav">
-          <a href="#">ABOUT</a>
-          <a href="#">WORKS</a>
-          <a href="#">NEWS</a>
-          <a href="#">CAREERS</a>
-        </p>
-        <div class="go_top">
-          <span @click="gotop">TOP ↑</span>
-          <p>版权所有© JHA DESIGN</p>
-        </div>
-        <div class="footer_info">
-          Copyright © 2018 www.jha-design.com 沪ICP备14001709号 | 互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com
-        </div>
-      </div>
-    </div>
+    <Footer></Footer>
     
   </div>
 </template>
 
 <script>
 import Header from '~/components/common/header.vue';
+import Footer from '~/components/common/footer.vue';
 
 export default {
   head(){
@@ -235,7 +254,8 @@ export default {
     }
   },
   components: {
-    Header
+    Header,
+    Footer
   },
   data(){
     return {
@@ -243,10 +263,7 @@ export default {
     }
   },
   methods:{
-    gotop(){
-      document.getElementsByTagName('html')[0].scrollTop = 0;
-      document.getElementsByTagName('body')[0].scrollTop = 0;
-    }
+    
   },
   mounted() {
     
@@ -267,6 +284,17 @@ export default {
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next'
     });
+
+
+    var mySwiper3 = new Swiper('#home_team', {
+        autoplay: 25000,//可选选项，自动滑动
+        loop : true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    });
+
+
+    
   }
 }
 </script>
@@ -278,6 +306,19 @@ export default {
 
 /* banner */
 .banner_box{
+  .swiper-slide{
+    padding: 1rem 0;
+  }
+  .swiper-slide1{
+    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+  }
+  .swiper-slide2{
+    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+  }
+  .swiper-slide3{
+    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+  }
+
   .banner_bg{
     position: absolute;
     left: 0;
@@ -290,9 +331,10 @@ export default {
     background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0.2)); /* 标准的语法 */
   }
   .banner_info_box{ 
-    position: absolute; left:50%; top: 0; transform: translateX(-50%); width: 100%; max-width: 1200px; height: 100%; color: #ccc;
+     width: 100%; max-width: 1200px; height: 100%; color: #ccc;
+     margin: 0 auto;
     .banner_info{ 
-      width: 4.5rem; position: relative; top: 50%; transform: translateY(-50%); box-sizing: border-box; margin-left: 0.5rem;
+      width: 4.5rem; position: relative; box-sizing: border-box; margin-left: 0.5rem;
   
       .banner_tag{
         display: inline-block;
@@ -324,6 +366,20 @@ export default {
 
 
 .banner2{
+  
+  .swiper-slide{
+    padding: 1rem 0;
+  }
+  .swiper-slide1{
+    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
+  }
+  .swiper-slide2{
+    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
+  }
+  .swiper-slide3{
+    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
+  }
+  
   .banner_info_box{
     .banner_info{
       height: 100%;
@@ -331,7 +387,6 @@ export default {
       top: 0;
       transform: translateY(0);
       text-align: center;
-      padding-top: 3%;
       margin-left: 0;
       b{
         color: #ccc;
@@ -392,6 +447,41 @@ export default {
   }
 }
 
+.aboutus{
+  padding: 0.5rem 0 1rem;
+  background: url('~/static/img/home/aboutus_bg.jpg') no-repeat center center;
+  background-size: cover;
+  .about_logo{
+    width: 0.8rem;
+    height: 0.98rem;
+    margin: 0 auto;
+    background: url('~/static/img/logo2.png') no-repeat center center;
+    background-size: cover;
+  }
+  h3{
+    font-size: 0.38rem;
+    padding-top: 0.4rem;
+    text-align: center;
+    span{
+      display: inline-block;
+      border-bottom: #a7161d solid 2px;
+    }
+  }
+  p{
+    margin-top: 0.35rem;
+    font-size: 0.14rem;
+    line-height: 0.32rem;
+    color: #5c5c5c;
+    text-align: center;
+  }
+  .aboutus_icon{
+    text-align: center;
+    margin-top: 0.55rem;
+    img{
+      max-width: 100%;
+    }
+  }
+}
 
 .team{
   padding-bottom: 1rem;
@@ -410,8 +500,11 @@ export default {
     margin: 0.6rem auto 0;
     li{
       float: left;
-      width: 25%;
+      width: 19%;
+      margin: 0 3%;
       text-align: center;
+      cursor: pointer;
+      
       b{
         display: block;
         margin-top: 0.3rem;
@@ -421,8 +514,23 @@ export default {
         color: #666;
         font-size: 0.16rem;
       }
-      img{
-        width: 80%;
+      div{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+        img{
+          width: 100%;
+          -webkit-transition:all 0.3s linear 0s;
+          transition:all 0.3s linear 0s;
+        }
+      }
+      
+      &:hover{
+        img{
+          transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        }
+        
       }
     }
   }
@@ -527,10 +635,7 @@ export default {
       }
     }
     img{ width: 130%;}
-    .swiper-container-horizontal>.swiper-pagination{ bottom: 5px;}
-    .swiper-button-prev{left: 0;}
-    .swiper-button-next{right: 0;}
-    .swiper-button-next, .swiper-button-prev{ transform: scale(0.6);}
+    
   }
   
   .banner_bg_black{
@@ -551,11 +656,13 @@ export default {
 <style lang="scss">
 .home{
   .swiper-container{
-    .swiper-slide{ max-width: 100vw; overflow: hidden;}
+    .swiper-slide{ max-width: 100vw; overflow: hidden; background-size: cover;}
     .swiper-pagination-bullet{ width: 0.44rem; height: 2px; border-radius:3rem; background-color: #fff; opacity: 1;}
     .swiper-pagination-bullet-active{ background-color: #a7161d;}
     .swiper-button-next, .swiper-button-prev{}
   }
 }
+
+
   
 </style>

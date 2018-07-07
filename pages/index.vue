@@ -270,7 +270,7 @@ export default {
 
     //首页banner
     var mySwiper1 = new Swiper('#home_banner1', {
-        autoplay: 25000,//可选选项，自动滑动
+        autoplay: 2500,//可选选项，自动滑动
         pagination : '.swiper-pagination',
         loop : true,
         prevButton:'.swiper-button-prev',
@@ -278,7 +278,7 @@ export default {
     });
 
     var mySwiper2 = new Swiper('#home_banner2', {
-        autoplay: 25000,//可选选项，自动滑动
+        autoplay: 2500,//可选选项，自动滑动
         pagination : '.swiper-pagination',
         loop : true,
         prevButton:'.swiper-button-prev',
@@ -287,7 +287,7 @@ export default {
 
 
     var mySwiper3 = new Swiper('#home_team', {
-        autoplay: 25000,//可选选项，自动滑动
+        autoplay: 2500,//可选选项，自动滑动
         loop : true,
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next'
@@ -639,7 +639,7 @@ export default {
   }
   
   .banner_bg_black{
-    .banner_info_box{
+    .banner_info_box{ 
       .banner_info{ 
         top: 0.2rem;
         b{ font-size: 0.2rem; margin-top:0.2rem ;}

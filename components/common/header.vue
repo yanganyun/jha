@@ -3,10 +3,11 @@
     <nav class="nav_bg">
         <ul class="nav">
             <li>
-              <a href="#"><img src="~/static/img/logo.png" alt=""></a>
+              <a class="logo" href="#"></a>
             </li>
             <li id="hui">
-              <a class="nav_a">慧</a>
+              <a class="nav_a" href="/hui">慧</a>
+              <b></b>
             </li>
             <li id="ji">
               <a class="nav_a">集</a>
@@ -15,12 +16,15 @@
                 <a class="ji_xinyuan" href="#">心苑<i></i></a>
                 <a class="ji_youwu" href="#">尤物<i></i></a>
               </span>
+              <b></b>
             </li>
             <li id="cheng">
               <a class="nav_a">诚</a>
+              <b></b>
             </li>
             <li id="eed">
               <a class="nav_a">EED lab</a>
+              <b></b>
             </li>
         </ul>
     </nav>
@@ -74,11 +78,31 @@ export default {
         -moz-box-flex:1; //占3成
         -webkit-box-flex:1;
         box-flex:1;
+        position: relative;
         a{
           display: inline-block;
           img{
             margin-top: 0.05rem;
           }
+        }
+        .logo{
+          display: inline-block;
+          width: 0.49rem;
+          height: 0.49rem;
+          background: url('~/static/img/logo.png') no-repeat center top;
+          background-size: cover;
+          vertical-align: middle;
+        }
+        b{
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 0;
+          transform: translateX(-50%);
+          width: 4.35rem;
+          height: 0.65rem;
+          background: url('~/static/img/nav_bg.png') no-repeat center bottom;
+          background-size: cover;
         }
         .nav_a{
           display: inline-block;
@@ -86,6 +110,8 @@ export default {
           color: #fff;
           cursor: pointer;
           margin-right: 0.12rem;
+          position: relative;
+          z-index: 2;
         }
         span{
           display: none;
@@ -104,6 +130,7 @@ export default {
               width: 4.35rem;
               height: 0.65rem;
               background: url('~/static/img/nav_bg.png') no-repeat center bottom;
+              background-size: cover;
             }
           }
         }
@@ -137,6 +164,15 @@ export default {
     border-bottom: #a7161d solid 2px;
     height: 0.65rem;
     box-sizing: border-box;
+    
+  }
+  b,span{
+    display: inline-block;
+  }
+}
+.ji #ji,.youwu #ji,.jiyue #ji,.xinyuan #ji{
+  b{
+    display: none;
   }
 }
 
@@ -147,12 +183,12 @@ export default {
   height: 0.65rem;
   box-sizing: border-box;
   span{
-    display: inline-block;
-    i{
-      display: inline-block;
-    }
+    display: inline-block!important;
+    
   }
-  
+  i{
+        display: inline-block;
+      }
 }
 
 

@@ -3,13 +3,19 @@
     <Header></Header>
     
     <div class="hui_icon">
-      <img src="~/static/img/hui/icon.png" alt="">
+      <img @click="dataType('A')" title="古" src="~/static/img/hui/icon1.png" alt="">
+      <img @click="dataType('B')" title="今" src="~/static/img/hui/icon2.png" alt="">
+      <img @click="dataType('C')" title="中" src="~/static/img/hui/icon3.png" alt="">
+      <img @click="dataType('D')" title="外" src="~/static/img/hui/icon4.png" alt="">
+      <img @click="dataType('E')" title="海派" src="~/static/img/hui/icon5.png" alt="">
     </div>
+
     
-    <div class="hui_list_box clearfix">
+    
+    <!-- <div class="hui_list_box clearfix">
       <ul class="hui_list hui_list1 clearfix">
-        <li v-for="item in 4" :key="item">
-          <img src="~/static/img/hui/list1_1.jpg" alt="">
+        <li v-for="item in 4" :key="item" @click="showDialogFn">
+          <img src="~/static/img/hui/list1.jpg" alt="">
           <div class="info_box">
             <h4>大酒店時間</h4>
             <p>上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝</p>
@@ -17,34 +23,50 @@
         </li>
       </ul>
       <ul class="hui_list hui_list2 clearfix">
-        <li v-for="item in 3" :key="item">
-          <img src="~/static/img/hui/list1_1.jpg" alt="">
+        <li v-for="item in 3" :key="item" @click="showDialogFn">
+          <img src="~/static/img/hui/list1.jpg" alt="">
           <div class="info_box">
             <h4>大酒店時間</h4>
             <p>上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝</p>
           </div>
         </li>
       </ul>
+    </div> -->
+
+
+
+    <div>
+      <div class="hui_list_box clearfix">
+        <ul class="hui_list clearfix">
+          <li v-for="(item,index) in typeList" :key="index" @click="showDialogFn(index,$event)">
+            <img :src="'https://www.jha-design.com/pic/hui/'+item.details.filename+'/list.jpg'" alt="">
+            <div class="info_box">
+              <h4>{{item.title}}</h4>
+              <p>{{item.summary}}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
-
-
-
-    <div class="hui_list_box clearfix">
-      <ul class="hui_list hui_list3 clearfix">
-        <li v-for="item in 7" :key="item">
-          <img src="~/static/img/hui/list1_1.jpg" alt="">
-          <div class="info_box">
-            <h4>大酒店時間</h4>
-            <p>上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝上海是卡卡是奧斯卡拉拉時大舅上帝</p>
+    <div class="dialog_bg" v-show="showDialog"></div>
+    <div class="dialog_box" :class="{dialog_show:showDialog}">
+      <div class="dialog_content">
+        <em>{{dialogDetail.city}}</em>
+        <h4>{{dialogDetail.title}}</h4>
+        <p v-for="item in dialogDetail.info" :key="item">{{item}}</p>
+      </div>
+      <div class="hui_pic_show swiper-container" id="pic_show">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="item in dialogDetail.imgLength" :key="item">
+            <img :src="'https://www.jha-design.com/pic/hui/'+dialogDetail.filename+'/'+(item)+'.jpg'" alt="">
           </div>
-        </li>
-      </ul>
-    </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+      </div>
 
-
-    <div class="dialog_box">
-
+      <div class="dialog_close" @click="closeDialog"></div>
     </div>
     
     <!-- 板块5  底部 -->
@@ -55,6 +77,8 @@
 <script>
 import Header from '~/components/common/header.vue';
 import Footer from '~/components/common/footer.vue';
+
+import listData from '~/assets/js/data/hui.js';
 
 export default {
   head(){
@@ -79,18 +103,62 @@ export default {
   },
   data(){
     return {
-
+      listData: listData,
+      dialogDetail: '',
+      showDialog: false,
+      typeList: listData,
+    }
+  },
+  computed:{
+    listBoxLength:function(){
+      return parseInt(this.listData.length/7)+1;
     }
   },
   methods:{
-    
+    closeDialog(){
+      this.showDialog = false;
+      this.dialogDetail = '';
+    },
+    showDialogFn(index,ev){
+      this.showDialog = true; 
+      //this.mySwiper.update();
+      this.dialogDetail = this.typeList[index].details;
+
+      var self = this;
+      setTimeout(function(){
+          self.mySwiper.update();
+      },300);
+    },
+    boxType(index){
+      return parseInt(15/7)%2;
+    },
+    boxShow(index){
+      return parseInt(15/7)%2;
+    },
+    dataType(type){
+      var listData = this.listData;
+      var newData = [];
+      for(var i=0;i<listData.length;i++){
+        var thisType = listData[i].type;
+        if(thisType.join('_').indexOf(type)>=0){
+          newData.push(listData[i]);
+        }
+      }
+      this.typeList = newData;
+
+
+    }
   },
   mounted() {
     
-
     
-
-
+    this.mySwiper = new Swiper('#pic_show', {
+        autoplay: false,//可选选项，自动滑动
+        loop : true,
+        //init: false,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    });
     
   }
 }
@@ -108,18 +176,32 @@ export default {
     }
     .hui_icon{
       text-align: center;
+      
       img{
         max-width: 100%;
+        width: 1rem;
+        margin: 0 1%;
+        cursor: pointer;
+        transition: all 0.2s ease-out 0s;
+        -webkit-transition: all 0.2s ease-out 0s;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        &:hover{
+          transform: translateY(-6px);
+          -webkit-transform: translateY(-6px);
+        }
       }
       margin-bottom: 0.8rem;
     }
     .hui_list_box{
-      max-width: 1200px;
+      max-width: 1300px;
+      margin: 0 auto;
       .hui_list{
-        float: left;
+        //float: left;
         li{
           float: left;
-          
+          width: 23%;
+          margin: 1% 1%;
           position: relative;
           -webkit-transition:all 0.2s linear 0s;
           transition:all 0.2s linear 0s;
@@ -188,17 +270,94 @@ export default {
       }
     }
 
-    .dialog_box{
-      width: 1193px;
-    height: 1235px;
-    box-shadow: 5px 4px 8px 0px rgba(68, 68, 68, 0.22);
-    border: solid 3px #bab3b3;
-    }
+    
   }
 
+  .dialog_bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+  }
+  .dialog_box{
+    width: 96%;
+    max-width: 1200px;
+    box-shadow: 5px 4px 8px 0px rgba(68, 68, 68, 0.22);
+    border: solid 3px #bab3b3;
+    background-color: #fff;
+    padding-bottom: 0.75rem;
+    position: absolute; left: 50%; top: 8%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 100;
+    visibility: hidden;
+    // transform: scale(0.5) translateX(-50%);
+    // z-index: -1;
+    // transition: all 0.3s ease-out 0s;
+    // -webkit-transition: all 0.3s ease-out 0s;
+    // visibility: hidden;
+    .dialog_content{
+      padding: 0.75rem 0.9rem;
+      em{
+        font-style: normal;
+        font-family: 'SimSun';
+        font-weight: bold;
+        font-size: 0.38rem;
+        color: #ccc;
+        display: block;
+        line-height: 0.4rem;
+      }
+      h4{
+        font-family: 'SimSun';
+        font-weight: bold;
+        font-size: 0.44rem;
+        color: #1f1f1f;
+      }
+      p{
+        font-size: 0.16rem;
+        margin-top: 0.3rem;
+        line-height: 0.28rem;
+      }
+    }
+    
 
-</style>
-<style lang="scss">
+    .hui_pic_show{
+      margin: 0 0.9rem;
+      .swiper-slide{
+        img{
+          width: 100%;
+        }
+      }
+      .swiper-button-white{
+        opacity: 1;
 
-  
+      }
+    }
+
+    .dialog_close{
+      position: absolute;
+      right: 0.2rem;
+      top: 0.1rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background: url('~/static/img/icon/close.png') no-repeat center center;
+      background-size: 50%;
+      cursor: pointer;
+    }
+  }
+  .dialog_show{
+    visibility: inherit;
+    // opacity: 1;
+    // transform: scale(1) translateX(-50%);
+    // z-index: 100;
+  }
+
+@media only screen and (max-width: 900px) {
+  .dialog_box{
+    padding: 0.4rem;
+  }
+}
 </style>

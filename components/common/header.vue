@@ -3,18 +3,18 @@
     <nav class="nav_bg">
         <ul class="nav">
             <li>
-              <a class="logo" href="#"></a>
+              <a class="logo" href="/"></a>
             </li>
             <li id="hui">
               <a class="nav_a" href="/hui">慧</a>
               <b></b>
             </li>
             <li id="ji">
-              <a class="nav_a">集</a>
+              <a class="nav_a" href="/xinyuan">集</a>
               <span>
-                <a class="ji_jiyue" href="#">集跃<i></i></a>
-                <a class="ji_xinyuan" href="#">心苑<i></i></a>
-                <a class="ji_youwu" href="#">尤物<i></i></a>
+                <!-- <a class="ji_jiyue" href="/jiyue">集跃<i></i></a> -->
+                <a class="ji_xinyuan" href="/xinyuan">心苑<i></i></a>
+                <a class="ji_youwu" href="/youwu">尤物<i></i></a>
               </span>
               <b></b>
             </li>
@@ -62,7 +62,7 @@ export default {
 .header{ 
   
   .nav_bg{
-    background-color: rgba(0,0,0,0.6); box-shadow:0 3px 10px rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7); box-shadow:0 3px 10px rgba(0,0,0,0.4);
     position: fixed;
     top: 0;
     z-index: 99;
@@ -78,6 +78,7 @@ export default {
         -moz-box-flex:1; //占3成
         -webkit-box-flex:1;
         box-flex:1;
+        z-index: 1;
         position: relative;
         a{
           display: inline-block;
@@ -121,6 +122,7 @@ export default {
             padding: 0 0.13rem;
             color: #fff;
             position: relative;
+            z-index: 1;
             i{
               display: none;
               position: absolute;
@@ -160,6 +162,7 @@ export default {
 .cheng #cheng,
 .eed #eed{
   font-size: 0.3rem;
+  z-index: 0;
   .nav_a{
     border-bottom: #a7161d solid 2px;
     height: 0.65rem;
@@ -171,6 +174,10 @@ export default {
   }
 }
 .ji #ji,.youwu #ji,.jiyue #ji,.xinyuan #ji{
+  // .nav_a{
+  //   border-bottom: none;
+  //   height: 0.65rem;
+  // }
   b{
     display: none;
   }
@@ -182,13 +189,14 @@ export default {
   border-bottom: #fff solid 2px;
   height: 0.65rem;
   box-sizing: border-box;
+  z-index: 0;
   span{
     display: inline-block!important;
     
   }
   i{
-        display: inline-block;
-      }
+    display: inline-block;
+  }
 }
 
 

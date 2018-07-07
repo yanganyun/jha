@@ -50,7 +50,7 @@
     </div>
 
     <div class="dialog_bg" v-show="showDialog"></div>
-    <div class="dialog_box" :class="{dialog_show:showDialog}">
+    <div class="dialog_box" id="dialog_box" :class="{dialog_show:showDialog}">
       <div class="dialog_content">
         <em>{{dialogDetail.city}}</em>
         <h4>{{dialogDetail.title}}</h4>
@@ -124,6 +124,11 @@ export default {
       //this.mySwiper.update();
       this.dialogDetail = this.typeList[index].details;
 
+      var dialog_box = document.getElementById('dialog_box');
+      var doc = document.querySelectorAll('html,body');
+      var winTop = doc[0].scrollTop || doc[1].scrollTop;
+      dialog_box.style.top = winTop + 50 + 'px';
+
       var self = this;
       setTimeout(function(){
           self.mySwiper.update();
@@ -154,7 +159,7 @@ export default {
     
     this.mySwiper = new Swiper('#pic_show', {
         autoplay: false,//可选选项，自动滑动
-        loop : true,
+        loop : false,
         //init: false,
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next'
@@ -206,6 +211,7 @@ export default {
           -webkit-transition:all 0.2s linear 0s;
           transition:all 0.2s linear 0s;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          cursor: pointer;
           img{
             width: 100%;
           }
@@ -327,10 +333,26 @@ export default {
     .hui_pic_show{
       margin: 0 0.9rem;
       .swiper-slide{
+        text-align: center;
+        // -webkit-transition:all 0.2s linear 0s;
+        // transition:all 0.2s linear 0s;
         img{
           width: 100%;
         }
       }
+      // .swiper-slide-prev{
+      //   transform: scale(0.8) translateX(100%);
+      //   -webkit-transform: scale(0.8) translateX(100%);
+      // }
+      // .swiper-slide-active{
+      //   transform: scale(0.9);
+      //   -webkit-transform: scale(0.9);
+      //   z-index: 9;
+      // }
+      // .swiper-slide-next{
+      //   transform: scale(0.8) translateX(-100%);
+      //   -webkit-transform: scale(0.8) translateX(-100%);
+      // }
       .swiper-button-white{
         opacity: 1;
 
@@ -356,8 +378,36 @@ export default {
   }
 
 @media only screen and (max-width: 900px) {
+  .hui{
+    .hui_list_box{
+      .hui_list{
+        li{
+          width: 94%;
+          margin: 0.2rem 3%;
+          .info_box{
+            opacity: 1;
+          }
+          &:hover{
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            z-index: 2;
+            .info_box{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
   .dialog_box{
     padding: 0.4rem;
+    
+    .dialog_content{
+      padding: 0.2rem 0;
+    }
+    .hui_pic_show{
+      margin: 0;
+    }
   }
 }
 </style>

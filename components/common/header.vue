@@ -19,7 +19,7 @@
               <b></b>
             </li>
             <li id="cheng">
-              <a class="nav_a">诚</a>
+              <a class="nav_a" href="/cheng">诚</a>
               <b></b>
             </li>
             <li id="eed">

@@ -54,7 +54,7 @@
       <div class="dialog_content">
         <em>{{dialogDetail.city}}</em>
         <h4>{{dialogDetail.title}}</h4>
-        <p v-for="item in dialogDetail.info" :key="item">{{item}}</p>
+        <p v-for="item in dialogDetail.info" :key="item" v-html="item"></p>
       </div>
       <div class="hui_pic_show swiper-container" id="pic_show">
         <div class="swiper-wrapper">
@@ -336,8 +336,10 @@ export default {
         text-align: center;
         // -webkit-transition:all 0.2s linear 0s;
         // transition:all 0.2s linear 0s;
+        max-height: 8rem;
         img{
           width: 100%;
+          max-width: 100%;
         }
       }
       // .swiper-slide-prev{

@@ -5,7 +5,7 @@
     <div class="main">
       <img src="~/static/img/ji/xinyuan/banner.jpg" width="100%" alt="">
       <img src="~/static/img/ji/xinyuan/content.jpg" width="100%" alt="">
-      <div class="btn">返回</div>
+      <!-- <div class="btn">返回</div> -->
     </div>
     
     

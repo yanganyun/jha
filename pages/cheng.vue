@@ -137,8 +137,8 @@ export default {
       this.showDetail(index);
       var doc = document.querySelectorAll('html,body');
       var team = document.getElementById('team');
-      doc[0].scrollTop = team.offsetTop;
-      doc[1].scrollTop = team.offsetTop;
+      doc[0].scrollTop = team.offsetTop-50;
+      doc[1].scrollTop = team.offsetTop-50;
     }
     
 

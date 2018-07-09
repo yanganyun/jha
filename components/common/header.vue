@@ -2,7 +2,7 @@
   <div>
     
     <header class="header" :class="{header_hide:hideHead&&pageName=='index'}">
-      <nav class="nav_bg">
+      <nav class="nav_bg" @mousemove="hideHead=false" @mouseout="hideHead=true">
         <ul class="nav">
             <li>
               <a class="logo" href="/"></a>

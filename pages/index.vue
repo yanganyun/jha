@@ -14,6 +14,8 @@
               <a href="#">点击了解更多</a>
             </div>
           </div>
+          <div class="float_1"></div>
+          <div class="float_2"></div>
         </div>
         <div class="swiper-slide swiper-slide2">
           <div class="banner_bg"></div>
@@ -24,6 +26,8 @@
                 <a href="#">点击了解更多</a>
             </div>
           </div>
+          <div class="float_1"></div>
+          <div class="float_2"></div>
         </div>
         <div class="swiper-slide swiper-slide3">
           <div class="banner_bg"></div>
@@ -34,6 +38,8 @@
                 <a href="#">点击了解更多</a>
             </div>
           </div>
+          <div class="float_1"></div>
+          <div class="float_2"></div>
         </div>
       </div>
       <div class="swiper-button-prev swiper-button-white"></div>
@@ -202,7 +208,7 @@ export default {
 
     //首页banner
     var mySwiper1 = new Swiper('#home_banner1', {
-        autoplay: 2500,//可选选项，自动滑动
+        autoplay: 5000,//可选选项，自动滑动
         pagination : '.swiper-pagination',
         loop : true,
         prevButton:'.swiper-button-prev',
@@ -210,7 +216,7 @@ export default {
     });
 
     var mySwiper2 = new Swiper('#home_banner2', {
-        autoplay: 2500,//可选选项，自动滑动
+        autoplay: 5000,//可选选项，自动滑动
         pagination : '.swiper-pagination',
         loop : true,
         prevButton:'.swiper-button-prev',
@@ -219,7 +225,7 @@ export default {
 
 
     var mySwiper3 = new Swiper('#home_team', {
-        autoplay: 2500,//可选选项，自动滑动
+        autoplay: 5000,//可选选项，自动滑动
         loop : false,
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next',
@@ -255,14 +261,17 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2)); /* Safari 5.1 - 6 */
-    background: -o-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2)); /* Opera 11.1 - 12*/
-    background: -moz-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2)); /* Firefox 3.6 - 15*/
-    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0.2)); /* 标准的语法 */
+    z-index: 1;
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.1)); /* Safari 5.1 - 6 */
+    background: -o-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.1)); /* Opera 11.1 - 12*/
+    background: -moz-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.1)); /* Firefox 3.6 - 15*/
+    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2), rgba(0,0,0,0.1)); /* 标准的语法 */
   }
   .banner_info_box{ 
      width: 100%; max-width: 1200px; height: 100%; color: #ccc;
      margin: 0 auto;
+     position: relative;
+     z-index: 2;
     .banner_info{ 
       width: 4.8rem; position: relative; box-sizing: border-box; margin-left: 0.5rem;
   
@@ -284,11 +293,29 @@ export default {
         border-bottom:#fff solid 1px;
         padding-bottom: 0.12rem;
       }
-      p{ font-size: 0.14rem; line-height: 0.26rem; margin-top: 0.2rem;}
+      p{ font-size: 0.14rem; line-height: 0.26rem; margin-top: 0.2rem; color: #c9c9c9;}
       a{ display: inline-block; font-size:0.19rem; height: 0.44rem; line-height: 0.44rem; padding: 0 0.3rem; display: inline-block; background-color: #a7161d; color: #fff; margin-top: 0.32rem;}
     }
   }
   .swiper-slide{
+    .float_1,.float_2{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: block;
+      width: 3.4rem;
+      height: 1.6rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      
+      transform: translate(-60%,-110%) perspective(100px) rotateY(4deg);
+      -webkit-transition:all 0.5s ease-out 0.2s;
+      transition:all 0.5s ease-out 0.2s;
+      opacity: 0;
+    }
+    .float_2{
+      
+      transform: translate(100%,30%) perspective(100px) rotateY(-4deg);
+    }
     img{
       display: block;
       max-height: 650px;
@@ -297,17 +324,44 @@ export default {
 }
 
 .banner1{
+  .banner_info_box{
+    -webkit-transition:all 0.4s ease-out 0.2s;
+    transition:all 0.4s ease-out 0.2s;
+    opacity: 0;
+    transform: translateX(15%);
+  }
   .swiper-slide{
     height: 6rem;
   }
   .swiper-slide1{
     background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+    .float_1{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
+    .float_2{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
   }
   .swiper-slide2{
     background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+    .float_1{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
+    .float_2{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
   }
   .swiper-slide3{
     background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+    .float_1{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
+    .float_2{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
+  }
+  .swiper-slide-active{
+    .float_1{
+      transform: translate(0,-110%) perspective(100px) rotateY(4deg);
+      opacity: 1;
+    }
+    .float_2{
+      transform: translate(40%,30%) perspective(100px) rotateY(-4deg);
+      opacity: 1;
+    }
+    .banner_info_box{
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
   }
 }
 
@@ -594,6 +648,13 @@ export default {
 
 @media only screen and (max-width: 900px) {
   .banner_box{
+
+    .swiper-slide{
+      .float_1,.float_2{
+        display: none;
+      }
+    }
+
     .banner_info_box{ 
       
       width: 100%;

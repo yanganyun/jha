@@ -130,6 +130,9 @@ export default {
       dialog_box.style.top = winTop + 50 + 'px';
 
       var self = this;
+      this.mySwiper.activeIndex = 0;
+      this.mySwiper.updateActiveIndex();
+      
       setTimeout(function(){
           self.mySwiper.update();
       },300);
@@ -336,10 +339,12 @@ export default {
         text-align: center;
         // -webkit-transition:all 0.2s linear 0s;
         // transition:all 0.2s linear 0s;
-        max-height: 8rem;
+        height: 6rem;
+        overflow: hidden;
         img{
-          width: 100%;
-          max-width: 100%;
+          // width: 100%;
+          // max-width: 100%;
+          height: 100%;
         }
       }
       // .swiper-slide-prev{
@@ -409,6 +414,9 @@ export default {
     }
     .hui_pic_show{
       margin: 0;
+      .swiper-slide{
+        height: 4rem;
+      }
     }
   }
 }

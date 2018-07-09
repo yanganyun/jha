@@ -1,6 +1,8 @@
 <template>
-  <header class="header">
-    <nav class="nav_bg">
+  <div>
+    
+    <header class="header" :class="{header_hide:hideHead&&pageName=='index'}">
+      <nav class="nav_bg">
         <ul class="nav">
             <li>
               <a class="logo" href="/"></a>
@@ -27,46 +29,85 @@
               <b></b>
             </li>
         </ul>
-    </nav>
-  </header>
+      </nav>
+      
+    </header>
+
+    <div class="logo_middle" v-show="hideHead&&pageName=='index'" @mouseover="hideHead=false" @touchend="hideHead=false"></div>
+  </div>
+  
 </template>
 
 <script>
 export default {
   name:'Header',
+  data(){
+    var pageName = this.$route.name;
+    
+    return {
+      pageName: pageName,
+      hideHead: true
+    }
+  },
   mounted() {
     //二级导航居中
-    var $nav = $('.nav'),
-        $nav_down = $('.nav_down');
-    var navTimer = null;
-    $('.nav li,.nav_down li').hover(function(e){
-        clearTimeout(navTimer);
-        var navL = $nav.offset().left;
-        var num = $(this).index();
-        $nav_down.show();
-        var navLiW = $(this).eq(num).width();
-        $nav_down.find('li').eq(num).show().css({'left':navL,'width':navLiW}).siblings().hide();
-    },function(){
-        navTimer = setTimeout(function(){
-            $nav_down.hide();
-        },200);
+    // var $nav = $('.nav'),
+    //     $nav_down = $('.nav_down');
+    // var navTimer = null;
+    // $('.nav li,.nav_down li').hover(function(e){
+    //     clearTimeout(navTimer);
+    //     var navL = $nav.offset().left;
+    //     var num = $(this).index();
+    //     $nav_down.show();
+    //     var navLiW = $(this).eq(num).width();
+    //     $nav_down.find('li').eq(num).show().css({'left':navL,'width':navLiW}).siblings().hide();
+    // },function(){
+    //     navTimer = setTimeout(function(){
+    //         $nav_down.hide();
+    //     },200);
         
-    });
+    // });
+    var self = this;
+    // window.addEventListener('scroll',function(){
+    //   self.hideHead = false;
+    // })
+
+
   },
+
 }
 </script>
 
 
 <style lang="scss" scoped>
 
+.logo_middle{
+    position: fixed;
+    left: 50%;
+    top: 0.08rem;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    width: 0.49rem;
+    height: 0.49rem;
+    background: url('~/static/img/logo.png') no-repeat center top;
+    background-size: cover;
+    z-index: 99;
+  }
 .header{ 
+  position: relative;
+  -webkit-transition:all 0.2s linear 0s;
+  transition:all 0.2s linear 0s;
   
+  opacity: 1;
+  z-index: 9;
   .nav_bg{
     background-color: rgba(0,0,0,0.7); box-shadow:0 3px 10px rgba(0,0,0,0.4);
     position: fixed;
     top: 0;
     z-index: 99;
     width: 100%;
+
+    
     .nav{
       height: 0.65rem; max-width: 1200px; margin: 0 auto; overflow: hidden;
       
@@ -129,6 +170,7 @@ export default {
               left: 50%;
               top: 0;
               transform: translateX(-50%);
+              -webkit-transform: translateX(-50%);
               width: 4.35rem;
               height: 0.65rem;
               background: url('~/static/img/nav_bg.png') no-repeat center bottom;
@@ -153,6 +195,10 @@ export default {
       }
     }
   }
+}
+.header_hide{
+  opacity: 0;
+  z-index: -1;
 }
 
 

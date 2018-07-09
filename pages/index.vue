@@ -3,7 +3,7 @@
     <Header></Header>
 
     <!-- 板块1 -->
-    <div class="banner_box swiper-container" id="home_banner1">
+    <div class="banner_box swiper-container banner1" id="home_banner1">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide1">
           <div class="banner_bg"></div>
@@ -11,7 +11,7 @@
             <div class="banner_info">
               <h3>朗庭Cordis Hotel</h3>
               <p>项目落址于江宁区，为商务、会展、互联平台贸易等大都市商业活动提供完善、国际化的商旅功能。酒店共十九层，建筑面积60000㎡，客房278间 ，设施规划有容纳225人报告厅、大宴会厅、全日制餐厅、会议中心、风味餐厅、行政楼层、恒温泳池和健身房等。针对会务商旅精品酒店的偏大规模，空间规划对建筑布局做了妥善改善，确保流通区的尺度规范、确保动静前后区的严格分属。确保明快的色系与元素关联Cordis的精品定义。</p>
-              <a href="#" target="_blank">点击了解更多</a>
+              <a href="#">点击了解更多</a>
             </div>
           </div>
         </div>
@@ -19,9 +19,9 @@
           <div class="banner_bg"></div>
           <div class="banner_info_box">
             <div class="banner_info">
-                <h3>朗庭Cordis Hotel</h3>
-                <p>项目落址于江宁区，为商务、会展、互联平台贸易等大都市商业活动提供完善、国际化的商旅功能。酒店共十九层，建筑面积60000㎡，客房278间 ，设施规划有容纳225人报告厅、大宴会厅、全日制餐厅、会议中心、风味餐厅、行政楼层、恒温泳池和健身房等。针对会务商旅精品酒店的偏大规模，空间规划对建筑布局做了妥善改善，确保流通区的尺度规范、确保动静前后区的严格分属。确保明快的色系与元素关联Cordis的精品定义。</p>
-                <a href="#" target="_blank">点击了解更多</a>
+                <h3>九华山涵月楼度假别墅</h3>
+                <p>九华山涵月楼度假公寓项目坐落在安徽池州市柯村内，背倚中华四大佛教名山之-九华山。涵月楼度假酒店是九华山地区唯一的超五星奢华度假酒店。酒店占地311亩，徽派庭院式建筑风格，一步一风景，移步即洞天。顺应得天独厚的佛学底蕴、拥览依山面水的自然屏帐，酒店自规划、建筑、园林皆有 “万物静观皆自得”的悠然山水雅趣意境。度假公寓联墅环境延续涵月楼酒店“九重烟云”的旖旎风光，应业主的委托，在徽派建筑中以欧亚交融的文化要素构建典雅的西式生活情境。</p>
+                <a href="#">点击了解更多</a>
             </div>
           </div>
         </div>
@@ -29,9 +29,9 @@
           <div class="banner_bg"></div>
           <div class="banner_info_box">
             <div class="banner_info">
-                <h3>朗庭Cordis Hotel</h3>
-                <p>项目落址于江宁区，为商务、会展、互联平台贸易等大都市商业活动提供完善、国际化的商旅功能。酒店共十九层，建筑面积60000㎡，客房278间 ，设施规划有容纳225人报告厅、大宴会厅、全日制餐厅、会议中心、风味餐厅、行政楼层、恒温泳池和健身房等。针对会务商旅精品酒店的偏大规模，空间规划对建筑布局做了妥善改善，确保流通区的尺度规范、确保动静前后区的严格分属。确保明快的色系与元素关联Cordis的精品定义。</p>
-                <a href="#" target="_blank">点击了解更多</a>
+                <h3>环球金融中心办公总部</h3>
+                <p>为集团企业构建的总部展示空坐落于省会城市中央商务区的超高层国际金融中心，临江矗立。设计原则第一遵从企业的信仰文化----“信仰是一种敬畏、一种智慧、一种境界，也是一种志向  ” 。企业创始人归侨的身份，形成企业从教育产业起步发展至位列世界500强的多产业控股集团。</p>
+                <a href="#">点击了解更多</a>
             </div>
           </div>
         </div>
@@ -74,41 +74,18 @@
                   </div>
                 </li>
               </ul>
-              <a href="#" target="_blank">点击了解更多</a>
+              <a href="#">点击了解更多</a>
             </div>
           </div>
         </div>
         <div class="swiper-slide swiper-slide2">
           <div class="banner_info_box">
-              <div class="banner_info">
+            <div class="banner_info">
               <span class="banner_tag"></span>
-              <b>深圳马蹄山村</b>
-              <h3>城市更新创新模式研究</h3>
-              <p>•用者环境体验的主题场景研究<br>•创新运营的系统服务研究</p>
-              <ul class="banner2_list">
-                <li>
-                  <img src="~/static/img/home/banner2_list1_1.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>项目顶层理念</span>
-                    <span class="block">城市发展目标</span>
-                  </div>
-                </li>
-                <li>
-                  <img src="~/static/img/home/banner2_list1_2.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>创意环境营造</span>
-                    <span class="block">其他社区环境界面</span>
-                  </div>
-                </li>
-                <li>
-                  <img src="~/static/img/home/banner2_list1_3.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>创新社区文化</span>
-                    <span class="block">活动事件策划</span>
-                  </div>
-                </li>
-              </ul>
-              <a href="#" target="_blank">点击了解更多</a>
+              <b class="pt1">深圳龙岗公共艺术馆</b>
+              <h3>“龙岗区”三馆一城项目</h3>
+              <br><br><br><br><br><br>
+              <a href="#">点击了解更多</a>
             </div>
           </div>
         </div>
@@ -116,33 +93,23 @@
           <div class="banner_info_box">
             <div class="banner_info">
               <span class="banner_tag"></span>
-              <b>深圳马蹄山村</b>
-              <h3>城市更新创新模式研究</h3>
-              <p>•用者环境体验的主题场景研究<br>•创新运营的系统服务研究</p>
-              <ul class="banner2_list">
-                <li>
-                  <img src="~/static/img/home/banner2_list1_1.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>项目顶层理念</span>
-                    <span class="block">城市发展目标</span>
-                  </div>
-                </li>
-                <li>
-                  <img src="~/static/img/home/banner2_list1_2.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>创意环境营造</span>
-                    <span class="block">其他社区环境界面</span>
-                  </div>
-                </li>
-                <li>
-                  <img src="~/static/img/home/banner2_list1_3.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>创新社区文化</span>
-                    <span class="block">活动事件策划</span>
-                  </div>
-                </li>
-              </ul>
-              <a href="#" target="_blank">点击了解更多</a>
+
+              <div class="banner_info_left">
+                <h3>绿地探索中心</h3><br><br>
+                <a href="#">点击了解更多</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide4">
+          <div class="banner_info_box">
+            <div class="banner_info">
+              <span class="banner_tag"></span>
+              <b class="pt1">嘉定</b>
+              <h3>汽车城文体设施策划运营方案</h3>
+              <br><br><br><br><br><br>
+              <a href="#">点击了解更多</a>
             </div>
           </div>
         </div>
@@ -174,55 +141,16 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <ul class="team_list">
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>蒋夏然</b>
-                <p>董事 / 设计总监</p>
-              </li>
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>蒋夏然</b>
-                <p>董事 / 项目总监</p>
-              </li>
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>蔡蕴</b>
-                <p>合伙人 / 主案设计</p>
-              </li>
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>曹呈祥</b>
-                <p>合伙人 / 客户总监</p>
-              </li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <ul class="team_list">
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>蒋夏然</b>
-                <p>董事 / 设计总监</p>
-              </li>
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>蒋夏然</b>
-                <p>董事 / 项目总监</p>
-              </li>
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>蔡蕴</b>
-                <p>合伙人 / 主案设计</p>
-              </li>
-              <li>
-                <div><img src="~/static/img/team/jiangxiaran.jpg" alt=""></div>
-                <b>曹呈祥</b>
-                <p>合伙人 / 客户总监</p>
+              <li @click="showDetail(index)" v-for="(item,index) in listData" :key="index">
+                <div><img :src="'http://pic.jha-design.com/team/'+item.pinyin+'.jpg'" alt=""></div>
+                <b>{{item.name}}</b>
+                <p>{{item.zhiwei}}</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="swiper-button-prev swiper-button-black"></div>
-        <div class="swiper-button-next swiper-button-black"></div>
+        <!-- <div class="swiper-button-prev swiper-button-black"></div>
+        <div class="swiper-button-next swiper-button-black"></div> -->
       </div>
     </div>
     
@@ -235,6 +163,8 @@
 <script>
 import Header from '~/components/common/header.vue';
 import Footer from '~/components/common/footer.vue';
+
+import listData from '~/assets/js/data/cheng.js';
 
 export default {
   head(){
@@ -259,11 +189,13 @@ export default {
   },
   data(){
     return {
-
+      listData: listData
     }
   },
   methods:{
-    
+    showDetail(index){
+      location.href = '/cheng?index='+index;
+    }
   },
   mounted() {
     
@@ -288,12 +220,18 @@ export default {
 
     var mySwiper3 = new Swiper('#home_team', {
         autoplay: 2500,//可选选项，自动滑动
-        loop : true,
+        loop : false,
         prevButton:'.swiper-button-prev',
-        nextButton:'.swiper-button-next'
+        nextButton:'.swiper-button-next',
+        onInit: function(swiper){
+          setTimeout(function(){
+            var H = parseInt($('.banner2 .swiper-slide').eq(1).height());
+          $('.banner2 .swiper-slide').height(H);
+          },100);
+        }
     });
 
-
+    
     
   }
 }
@@ -309,15 +247,7 @@ export default {
   .swiper-slide{
     padding: 1rem 0;
   }
-  .swiper-slide1{
-    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
-  }
-  .swiper-slide2{
-    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
-  }
-  .swiper-slide3{
-    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
-  }
+  
 
   .banner_bg{
     position: absolute;
@@ -334,7 +264,7 @@ export default {
      width: 100%; max-width: 1200px; height: 100%; color: #ccc;
      margin: 0 auto;
     .banner_info{ 
-      width: 4.5rem; position: relative; box-sizing: border-box; margin-left: 0.5rem;
+      width: 4.8rem; position: relative; box-sizing: border-box; margin-left: 0.5rem;
   
       .banner_tag{
         display: inline-block;
@@ -344,16 +274,18 @@ export default {
         background-size: cover;
         position: absolute;
         left: 0;
-        top: 0.4rem;
+        top: -0.4rem;
       }
-
+      .pt1{
+        padding-top: 1rem;
+      }
       b{ font-size: 0.36rem; font-weight: normal; display: block;}
-      h3{ color: #fff; font-size: 0.48rem; font-weight: normal;
+      h3{ color: #fff; font-size: 0.44rem; font-weight: normal;
         border-bottom:#fff solid 1px;
         padding-bottom: 0.12rem;
       }
       p{ font-size: 0.14rem; line-height: 0.26rem; margin-top: 0.2rem;}
-      a{ font-size:0.19rem; height: 0.44rem; line-height: 0.44rem; padding: 0 0.3rem; display: inline-block; background-color: #a7161d; color: #fff; margin-top: 0.32rem;}
+      a{ display: inline-block; font-size:0.19rem; height: 0.44rem; line-height: 0.44rem; padding: 0 0.3rem; display: inline-block; background-color: #a7161d; color: #fff; margin-top: 0.32rem;}
     }
   }
   .swiper-slide{
@@ -364,21 +296,24 @@ export default {
   }
 }
 
+.banner1{
+  .swiper-slide{
+    height: 6rem;
+  }
+  .swiper-slide1{
+    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+  }
+  .swiper-slide2{
+    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+  }
+  .swiper-slide3{
+    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
+  }
+}
 
 .banner2{
   
-  .swiper-slide{
-    padding: 1rem 0;
-  }
-  .swiper-slide1{
-    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
-  }
-  .swiper-slide2{
-    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
-  }
-  .swiper-slide3{
-    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
-  }
+  
   
   .banner_info_box{
     .banner_info{
@@ -393,11 +328,14 @@ export default {
         font-size: 0.23rem;
         margin-bottom: 0.05rem;
       }
+      .mt1{
+        margin-top: 1rem;
+      }
       h3{
         display: inline-block;
         border: #fff solid 2px;
         font-size: 0.38rem;
-        padding: 0 0.1rem;
+        padding: 0 0.15rem;
         line-height: 0.5rem;
         height: 0.5rem;
         overflow: hidden;
@@ -444,6 +382,41 @@ export default {
       }
       
     }
+  }
+
+  .swiper-slide{
+    padding: 1rem 0;
+  }
+  .swiper-slide1{
+    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .swiper-slide2{
+    background: url('~/static/img/home/banner2_list2_bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+  }
+  .swiper-slide3{
+    background: url('~/static/img/home/banner2_list3_bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    .banner_info{
+      .banner_info_left{
+        position: absolute; left: 50%; top: 45%; margin-left: -4rem; text-align: left;
+        h3{
+          
+        }
+        a{
+          
+        }
+      }
+      
+    }
+  }
+  .swiper-slide4{
+    background: url('~/static/img/home/banner2_list4_bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
   }
 }
 

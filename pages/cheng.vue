@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="cheng">
     <Header></Header>
 
     <!-- 板块3  关于我们 -->
@@ -28,7 +28,7 @@
     </div>
 
     <!-- 板块4  设计团队 -->
-    <div class="team">
+    <div class="team" id="team">
       <h3><span>设计团队</span></h3>
       <div class="home_team swiper-container" id="home_team">
         <div class="swiper-wrapper">
@@ -132,7 +132,17 @@ export default {
       });
     },400);
 
+    var index = this.$route.query.index;
+    if(index>=0){
+      this.showDetail(index);
+      var doc = document.querySelectorAll('html,body');
+      var team = document.getElementById('team');
+      doc[0].scrollTop = team.offsetTop;
+      doc[1].scrollTop = team.offsetTop;
+    }
+    
 
+    
     
   }
 }

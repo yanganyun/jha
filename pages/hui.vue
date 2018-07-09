@@ -62,8 +62,8 @@
             <img :src="'http://pic.jha-design.com/hui/'+dialogDetail.filename+'/'+(item)+'.jpg'" alt="">
           </div>
         </div>
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-black"></div>
+        <div class="swiper-button-next swiper-button-black"></div>
       </div>
 
       <div class="dialog_close" @click="closeDialog"></div>

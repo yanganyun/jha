@@ -35,7 +35,7 @@
           <div class="swiper-slide">
             <ul class="team_list">
               <li @click="showDetail(index)" v-for="(item,index) in listData" :key="index">
-                <div><img :src="'https://www.jha-design.com/pic/team/'+item.pinyin+'.jpg'" alt=""></div>
+                <div><img :src="'http://pic.jha-design.com/team/'+item.pinyin+'.jpg'" alt=""></div>
                 <b>{{item.name}}</b>
                 <p>{{item.zhiwei}}</p>
               </li>
@@ -49,7 +49,7 @@
       <!-- 人员介绍 -->
       <div class="team_info" v-show="thisMember">
         <div class="team_img">
-          <img :src="'https://www.jha-design.com/pic/team/'+thisMember.pinyin+'_big.jpg'" alt="">
+          <img :src="'http://pic.jha-design.com/team/'+thisMember.pinyin+'_big.jpg'" alt="">
         </div>
         <div class="team_detail">
           <h4>{{thisMember.name}}<span>{{thisMember.zhiwei}}</span></h4>

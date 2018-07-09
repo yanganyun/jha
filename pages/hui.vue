@@ -39,7 +39,7 @@
       <div class="hui_list_box clearfix">
         <ul class="hui_list clearfix">
           <li v-for="(item,index) in typeList" :key="index" @click="showDialogFn(index,$event)">
-            <img :src="'https://www.jha-design.com/pic/hui/'+item.details.filename+'/list.jpg'" alt="">
+            <img :src="'http://pic.jha-design.com/hui/'+item.details.filename+'/list.jpg'" alt="">
             <div class="info_box">
               <h4>{{item.title}}</h4>
               <p>{{item.summary}}</p>
@@ -59,7 +59,7 @@
       <div class="hui_pic_show swiper-container" id="pic_show">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="item in dialogDetail.imgLength" :key="item">
-            <img :src="'https://www.jha-design.com/pic/hui/'+dialogDetail.filename+'/'+(item)+'.jpg'" alt="">
+            <img :src="'http://pic.jha-design.com/hui/'+dialogDetail.filename+'/'+(item)+'.jpg'" alt="">
           </div>
         </div>
         <div class="swiper-button-prev swiper-button-white"></div>

@@ -25,7 +25,7 @@
               <b></b>
             </li>
             <li id="eed">
-              <a class="nav_a">EED lab</a>
+              <a class="nav_a" href="/eed">EED lab</a>
               <b></b>
             </li>
         </ul>
@@ -211,7 +211,8 @@ export default {
   z-index: 0;
   .nav_a{
     border-bottom: #a7161d solid 2px;
-    height: 0.65rem;
+    //height: 0.65rem;
+    height: 0.62rem;
     box-sizing: border-box;
     
   }
@@ -233,7 +234,8 @@ export default {
 .ji #ji,.youwu #ji .ji_youwu,.jiyue #ji .ji_jiyue,.xinyuan #ji .ji_xinyuan
 {
   border-bottom: #fff solid 2px;
-  height: 0.65rem;
+  //height: 0.65rem;
+  height: 0.62rem;
   box-sizing: border-box;
   z-index: 0;
   span{

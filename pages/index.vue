@@ -220,14 +220,6 @@ export default {
         pagination : '.swiper-pagination',
         loop : true,
         prevButton:'.swiper-button-prev',
-        nextButton:'.swiper-button-next'
-    });
-
-
-    var mySwiper3 = new Swiper('#home_team', {
-        autoplay: 5000,//可选选项，自动滑动
-        loop : false,
-        prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next',
         onInit: function(swiper){
           setTimeout(function(){
@@ -235,6 +227,14 @@ export default {
           $('.banner2 .swiper-slide').height(H);
           },100);
         }
+    });
+
+
+    var mySwiper3 = new Swiper('#home_team', {
+        autoplay: 5000,//可选选项，自动滑动
+        loop : false,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
     });
 
     
@@ -262,10 +262,10 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.1)); /* Safari 5.1 - 6 */
-    background: -o-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.1)); /* Opera 11.1 - 12*/
-    background: -moz-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2),rgba(0,0,0,0.1)); /* Firefox 3.6 - 15*/
-    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.2), rgba(0,0,0,0.1)); /* 标准的语法 */
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4),rgba(0,0,0,0.1)); /* Safari 5.1 - 6 */
+    background: -o-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4),rgba(0,0,0,0.1)); /* Opera 11.1 - 12*/
+    background: -moz-linear-gradient(right,rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4),rgba(0,0,0,0.1)); /* Firefox 3.6 - 15*/
+    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.6),rgba(0,0,0,0.4), rgba(0,0,0,0.1)); /* 标准的语法 */
   }
   .banner_info_box{ 
      width: 100%; max-width: 1200px; height: 100%; color: #ccc;
@@ -305,12 +305,13 @@ export default {
       display: block;
       width: 3.4rem;
       height: 1.6rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      box-shadow: 0 0 30px rgba(0,0,0,0.7);
       
       transform: translate(-60%,-110%) perspective(100px) rotateY(4deg);
       -webkit-transition:all 0.5s ease-out 0.2s;
       transition:all 0.5s ease-out 0.2s;
       opacity: 0;
+      z-index: 3;
     }
     .float_2{
       
@@ -335,18 +336,18 @@ export default {
   }
   .swiper-slide1{
     background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
-    .float_1{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
-    .float_2{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
+    .float_1{ background: url('http://pic.jha-design.com/hui/nanjing_langting/2.jpg') no-repeat center center; background-size: cover;}
+    .float_2{ background: url('http://pic.jha-design.com/hui/nanjing_langting/5.jpg') no-repeat center center; background-size: cover;}
   }
   .swiper-slide2{
-    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
-    .float_1{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
-    .float_2{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
+    background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/1.jpg') no-repeat center center;
+    .float_1{ background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/4.jpg') no-repeat center center; background-size: cover;}
+    .float_2{ background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/5.jpg') no-repeat center center; background-size: cover;}
   }
   .swiper-slide3{
-    background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
-    .float_1{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
-    .float_2{ background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;}
+    background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/8.jpg') no-repeat center center;
+    .float_1{ background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/11.jpg') no-repeat center center; background-size: cover;}
+    .float_2{ background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/23.jpg') no-repeat center center; background-size: cover;}
   }
   .swiper-slide-active{
     .float_1{
@@ -456,7 +457,7 @@ export default {
     height: 100%;
     .banner_info{
       .banner_info_left{
-        position: absolute; left: 50%; top: 45%; margin-left: -4rem; text-align: left;
+        position: absolute; left: 33%; top: 45%; margin-left: -2rem; text-align: left;
         h3{
           
         }

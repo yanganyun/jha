@@ -286,8 +286,12 @@ export default {
   .team_info{
     width: 94%;
     max-width: 1300px;
+    //height: 0;
     margin: 0 auto;
     overflow: hidden;
+    // -webkit-transition:all 0.3s linear 0s;
+    // transition:all 0.3s linear 0s;
+    // opacity: 0;
     .team_img{
       width: 45%;
       float: left;
@@ -325,6 +329,10 @@ export default {
         line-height: 0.28rem;
       }
     }
+  }
+  .show_member{
+    height: auto;
+    opacity: 1;
   }
 }
 

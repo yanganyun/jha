@@ -22,8 +22,8 @@
 
       <div class="about_icon_content">
         <h4><span>设计流程</span></h4>
-        <b>第一阶段 : 空间规划</b>
-        <p>设计任务书和设计进度的确认<br>总体空间规划 & 项目调研<br>功能区域规划调整 & 酒管审核<br>主题 & 色彩 材料设计概念</p>
+        <b>{{liucheng[liuchengIndex].title}}</b>
+        <p v-html="liucheng[liuchengIndex].detail"></p>
       </div>
     </div>
 
@@ -82,6 +82,7 @@ import Header from '~/components/common/header.vue';
 import Footer from '~/components/common/footer.vue';
 
 import listData from '~/assets/js/data/cheng.js';
+import liucheng from '~/assets/js/data/liucheng.js';
 
 export default {
   head(){
@@ -107,6 +108,7 @@ export default {
   data(){
     return {
       listData: listData,
+      liucheng: liucheng,
       thisMember: '',
       liuchengIndex:0
     }

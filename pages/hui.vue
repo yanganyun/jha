@@ -202,7 +202,7 @@ export default {
       margin-bottom: 0.8rem;
     }
     .hui_list_box{
-      max-width: 1300px;
+      max-width: 1200px;
       margin: 0 auto;
       .hui_list{
         //float: left;

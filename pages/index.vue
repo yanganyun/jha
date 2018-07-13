@@ -275,14 +275,24 @@ export default {
     .banner_info{ 
       width: 4.8rem; position: relative; box-sizing: border-box; margin-left: 0.5rem;
   
+      // .banner_tag{
+      //   display: inline-block;
+      //   background: url('~/static/img/home/eed_logo.png') no-repeat center center;
+      //   width: 1.08rem;
+      //   height: 0.93rem;
+      //   background-size: cover;
+      //   position: absolute;
+      //   left: 0;
+      //   top: -0.4rem;
+      // }
       .banner_tag{
         display: inline-block;
-        background: url('~/static/img/home/eed_logo.png') no-repeat center center;
-        width: 1.08rem;
-        height: 0.93rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url('~/static/img/eed/eed_log.png') no-repeat center center;
         background-size: cover;
         position: absolute;
-        left: 0;
+        left: 2%;
         top: -0.4rem;
       }
       .pt1{

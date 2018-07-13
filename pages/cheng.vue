@@ -285,7 +285,7 @@ export default {
   }
   .team_info{
     width: 94%;
-    max-width: 1300px;
+    max-width: 1200px;
     //height: 0;
     margin: 0 auto;
     overflow: hidden;
@@ -352,7 +352,7 @@ export default {
   }
 }
 .cheng_content{
-  max-width: 1198px;
+  max-width: 1000px;
   margin: -5.6rem auto 0;
 }
 

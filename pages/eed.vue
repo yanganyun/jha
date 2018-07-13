@@ -5,7 +5,7 @@
 
     <!-- 板块1 -->
     <div class="banner1">
-      <div class="banner1_logo"></div>
+      <div class="eed_logo"></div>
       <div class="banner1_info">
         <h3>关于</h3>
         <p><i></i>当下及未来生活方式环境的创新研究</p>
@@ -198,21 +198,32 @@ export default {
     .banner_info{ 
       width: 4.8rem; position: relative; box-sizing: border-box; margin-left: 0.5rem;
   
+      // .banner_tag{
+      //   display: inline-block;
+      //   background: url('~/static/img/home/eed_logo.png') no-repeat center center;
+      //   width: 1.08rem;
+      //   height: 0.93rem;
+      //   background-size: cover;
+      //   position: absolute;
+      //   left: 0;
+      //   top: -0.4rem;
+      // }
       .banner_tag{
         display: inline-block;
-        background: url('~/static/img/home/eed_logo.png') no-repeat center center;
-        width: 1.08rem;
-        height: 0.93rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url('~/static/img/eed/eed_log.png') no-repeat center center;
         background-size: cover;
         position: absolute;
-        left: 0;
+        left: 2%;
         top: -0.4rem;
       }
       .pt1{
         padding-top: 1rem;
       }
       b{ font-size: 0.36rem; font-weight: normal; display: block;}
-      h3{ color: #fff; font-size: 0.44rem; font-weight: normal;
+      h3{ 
+        color: #fff; font-size: 0.44rem; font-weight: normal;
         border-bottom:#fff solid 1px;
         padding-bottom: 0.12rem;
       }
@@ -262,6 +273,18 @@ export default {
     top: 50%;
     transform: translate(-100%,-50%);
     -webkit-transform: translate(-100%,-50%);
+  }
+  .eed_logo{
+    width: 2rem;
+    height: 2rem;
+    background: url('~/static/img/eed/eed_log.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-120%,-50%);
+    -webkit-transform: translate(-120%,-50%);
+    
   }
   .banner1_info{
     position: absolute;

@@ -5,26 +5,36 @@
     <div class="main">
       <div class="zhizhi_top">
         <div class="zhizhi_l">
-          <img src="~/static/img/ji/youwu/zhizhi.jpg" alt="">
+          <!-- <img src="~/static/img/ji/youwu/zhizhi_banner1.jpg" alt=""> -->
+          <div class="swiper-container" id="zhizhi_banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="~/static/img/ji/youwu/zhizhi_banner1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="~/static/img/ji/youwu/zhizhi_banner2.jpg" alt="">
+              </div>
+            </div>
+          </div>
         </div>
         <ul class="zhizhi_r">
-          <li @click="zhizhiActive=0" :class="{active:zhizhiActive==0}">
+          <li @click="zhizhiFn(0)" :class="{active:zhizhiActive==0}">
             <img src="~/static/img/ji/youwu/zhizhi1.jpg" alt="">
             <div class="zhizhi_r_bg"></div>
             <p>SOMNAMBULIST</p>
           </li>
-          <li @click="zhizhiActive=1" :class="{active:zhizhiActive==1}">
-            <img src="~/static/img/ji/youwu/zhizhi1.jpg" alt="">
+          <li @click="zhizhiFn(1)" :class="{active:zhizhiActive==1}">
+            <img src="~/static/img/ji/youwu/zhizhi2.jpg" alt="">
             <div class="zhizhi_r_bg"></div>
             <p>EPIPHANY</p>
           </li>
-          <li @click="zhizhiActive=2" :class="{active:zhizhiActive==2}">
-            <img src="~/static/img/ji/youwu/zhizhi1.jpg" alt="">
+          <li @click="zhizhiFn(2)" :class="{active:zhizhiActive==2}">
+            <img src="~/static/img/ji/youwu/zhizhi3.jpg" alt="">
             <div class="zhizhi_r_bg"></div>
             <p>PENUMBRA</p>
           </li>
-          <li @click="zhizhiActive=3" :class="{active:zhizhiActive==3}">
-            <img src="~/static/img/ji/youwu/zhizhi1.jpg" alt="">
+          <li @click="zhizhiFn(3)" :class="{active:zhizhiActive==3}">
+            <img src="~/static/img/ji/youwu/zhizhi4.jpg" alt="">
             <div class="zhizhi_r_bg"></div>
             <p>PENUMBRA</p>
           </li>
@@ -34,11 +44,11 @@
 
       <div class="zhizhi_detail_tab" v-show="!showDetail">
         <ul>
-          <li @click="showDetailFn">
+          <li @click="showDetailFn" v-show="zhizhiActive==2">
             <img src="~/static/img/ji/youwu/zhizhi1_1.jpg" alt="">
             <p>又义支</p>
           </li>
-          <li class="qidai">COMING SOON</li>
+          <li class="qidai" v-show="zhizhiActive!=2">COMING SOON</li>
         </ul>
       </div>
 
@@ -95,10 +105,25 @@ export default {
   methods:{
     showDetailFn(){
       this.showDetail = true;
+    },
+    zhizhiFn(index){
+      this.zhizhiActive=index;
+      if(index==2){
+        
+      }else{
+        this.showDetail =false;
+      }
     }
   },
   mounted() {
-    
+    setTimeout(function(){
+      var mySwiper = new Swiper('#zhizhi_banner', {
+        autoplay: 2500,//可选选项，自动滑动
+        loop : false,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+      });
+    },400);
   }
 }
 </script>
@@ -112,7 +137,7 @@ export default {
   background-size: 100% auto;
   padding-top: 0.95rem;
   .main{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 1rem;
     .zhizhi_top{

@@ -63,7 +63,7 @@ export default {
 <style lang="scss" scoped>
 .xinyuan{
   .main{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 0.3rem rgba(0,0,0,0.15);

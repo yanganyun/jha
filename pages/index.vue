@@ -53,7 +53,7 @@
         <div class="swiper-slide swiper-slide1">
           <div class="banner_info_box">
             <div class="banner_info">
-              <span class="banner_tag"></span>
+              <span class="banner_tag" @click="goeed"></span>
               <b>深圳马蹄山村</b>
               <h3>城市更新创新模式研究</h3>
               <p>•用者环境体验的主题场景研究<br>•创新运营的系统服务研究</p>
@@ -80,29 +80,29 @@
                   </div>
                 </li>
               </ul>
-              <a href="#">点击了解更多</a>
+              <a href="/eed#mati">点击了解更多</a>
             </div>
           </div>
         </div>
         <div class="swiper-slide swiper-slide2">
           <div class="banner_info_box">
             <div class="banner_info">
-              <span class="banner_tag"></span>
+              <span class="banner_tag" @click="goeed"></span>
               <b class="pt1">深圳龙岗公共艺术馆</b>
               <h3>“龙岗区”三馆一城项目</h3>
               <br><br><br><br><br><br>
-              <a href="#">点击了解更多</a>
+              <a href="/eed#longgang">点击了解更多</a>
             </div>
           </div>
         </div>
         <div class="swiper-slide swiper-slide3">
           <div class="banner_info_box">
             <div class="banner_info">
-              <span class="banner_tag"></span>
+              <span class="banner_tag" @click="goeed"></span>
 
               <div class="banner_info_left">
                 <h3>绿地探索中心</h3><br><br>
-                <a href="#">点击了解更多</a>
+                <a href="/eed#lvdi">点击了解更多</a>
               </div>
               
             </div>
@@ -111,11 +111,11 @@
         <div class="swiper-slide swiper-slide4">
           <div class="banner_info_box">
             <div class="banner_info">
-              <span class="banner_tag"></span>
+              <span class="banner_tag" @click="goeed"></span>
               <b class="pt1">嘉定</b>
               <h3>汽车城文体设施策划运营方案</h3>
               <br><br><br><br><br><br>
-              <a href="#">点击了解更多</a>
+              <a href="/eed#jiading">点击了解更多</a>
             </div>
           </div>
         </div>
@@ -206,6 +206,9 @@ export default {
   methods:{
     showDetail(index){
       location.href = '/cheng?index='+index;
+    },
+    goeed(){
+      location.href = '/eed';
     }
   },
   mounted() {

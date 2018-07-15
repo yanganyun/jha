@@ -22,58 +22,65 @@
     <div class="banner_box swiper-container banner2" id="eed_banner2">
       <div class="swiper-wrapper">
         
-        <div class="swiper-slide swiper-slide1">
-          <div class="banner_info_box">
-            <div class="banner_info">
-              <span class="banner_tag"></span>
-              <b class="pt1">深圳龙岗公共艺术馆</b>
-              <h3>“龙岗区”三馆一城项目</h3>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide2">
-          <div class="banner_info_box">
-            <div class="banner_info">
-              <span class="banner_tag"></span>
-              <b class="pt1">深圳龙岗公共艺术馆</b>
-              <h3>“龙岗区”三馆一城项目</h3>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide3">
-          <div class="banner_info_box">
-            <div class="banner_info">
-              <span class="banner_tag"></span>
-              <b class="pt1">深圳龙岗公共艺术馆</b>
-              <h3>“龙岗区”三馆一城项目</h3>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide4">
-          <div class="banner_info_box">
-            <div class="banner_info">
-              <span class="banner_tag"></span>
-              <b class="pt1">深圳龙岗公共艺术馆</b>
-              <h3>“龙岗区”三馆一城项目</h3>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide5">
-          <div class="banner_info_box">
-            <div class="banner_info">
-              <span class="banner_tag"></span>
-              <b class="pt1">深圳龙岗公共艺术馆</b>
-              <h3>“龙岗区”三馆一城项目</h3>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/7.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner2/8.jpg" alt=""></div>
 
       </div>
-      <div class="swiper-button-prev swiper-button-white"></div>
-      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-black"></div>
+      <div class="swiper-button-next swiper-button-black"></div>
       <div class="swiper-pagination"></div>
     </div>
 
+    <!-- 板块2 -->
+    <div class="banner_box swiper-container banner2" id="eed_banner3">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide"><img src="~/static/img/eed/banner3/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner3/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner3/3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner3/4.jpg" alt=""></div>
+
+      </div>
+      <div class="swiper-button-prev swiper-button-black"></div>
+      <div class="swiper-button-next swiper-button-black"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 板块2 -->
+    <div class="banner_box swiper-container banner2" id="eed_banner4">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide"><img src="~/static/img/eed/banner4/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner4/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner4/3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner4/4.jpg" alt=""></div>
+
+      </div>
+      <div class="swiper-button-prev swiper-button-black"></div>
+      <div class="swiper-button-next swiper-button-black"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 板块2 -->
+    <div class="banner_box swiper-container banner2" id="eed_banner5">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide"><img src="~/static/img/eed/banner5/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner5/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner5/3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="~/static/img/eed/banner5/4.jpg" alt=""></div>
+
+      </div>
+      <div class="swiper-button-prev swiper-button-black"></div>
+      <div class="swiper-button-next swiper-button-black"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
     
     
@@ -91,8 +98,11 @@ import listData from '~/assets/js/data/cheng.js';
 
 export default {
   head(){
+    
+    
     return{
       title: 'EED lab',
+      
       meta: [{
           hid: "keywords",
           name: "keywords",
@@ -111,7 +121,9 @@ export default {
     Footer
   },
   data(){
+    var hash = this.$route.hash;
     return {
+      hash: hash,
       listData: listData
     }
   },
@@ -130,14 +142,56 @@ export default {
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next',
         onInit: function(swiper){
-          setTimeout(function(){
-            var H = parseInt($('.banner2 .swiper-slide').eq(1).height());
-          $('.banner2 .swiper-slide').height(H);
-          },100);
+          // setTimeout(function(){
+          //   var H = parseInt($('.banner2 .swiper-slide').eq(1).height());
+          // $('.banner2 .swiper-slide').height(H);
+          // },100);
         }
     });
 
+    var mySwiper3 = new Swiper('#eed_banner3', {
+        autoplay: 5000,//可选选项，自动滑动
+        pagination : '.swiper-pagination',
+        loop : true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    });
+    var mySwiper4 = new Swiper('#eed_banner4', {
+        autoplay: 5000,//可选选项，自动滑动
+        pagination : '.swiper-pagination',
+        loop : true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    });
+    var mySwiper5 = new Swiper('#eed_banner5', {
+        autoplay: 5000,//可选选项，自动滑动
+        pagination : '.swiper-pagination',
+        loop : true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    });
 
+
+    
+    var doc = document.querySelectorAll('html,body');
+    var banner2 = document.getElementById('eed_banner2');
+    var banner3 = document.getElementById('eed_banner3');
+    var banner4 = document.getElementById('eed_banner4');
+    var banner5 = document.getElementById('eed_banner5');
+    
+    if(/longgang/.test(this.hash)){
+      doc[0].scrollTop = banner2.offsetTop-50;
+      doc[1].scrollTop = banner2.offsetTop-50;
+    }else if(/mati/.test(this.hash)){
+      doc[0].scrollTop = banner3.offsetTop-50;
+      doc[1].scrollTop = banner3.offsetTop-50;
+    }else if(/jiading/.test(this.hash)){
+      doc[0].scrollTop = banner4.offsetTop-50;
+      doc[1].scrollTop = banner4.offsetTop-50;
+    }else if(/lvdi/.test(this.hash)){
+      doc[0].scrollTop = banner5.offsetTop-50;
+      doc[1].scrollTop = banner5.offsetTop-50;
+    }
     
     
   }
@@ -366,8 +420,14 @@ export default {
   }
 
   .swiper-slide{
-    padding: 1rem 0;
-    min-height: 8rem;
+    padding: 0 0;
+    //min-height: 8rem;
+    img{ position: relative;
+    // left: 50%;
+    // transform: translateX(-50%);
+    
+    max-width: 100%;
+    }
   }
   .swiper-slide1{
     background: url('~/static/img/eed/banner2/1.jpg') no-repeat center center;
@@ -495,10 +555,15 @@ export default {
 <style lang="scss">
 .eed{
   .swiper-container{
-    .swiper-slide{ max-width: 100vw; overflow: hidden; background-size: auto 100%;}
-    .swiper-pagination-bullet{ width: 0.44rem; height: 2px; border-radius:3rem; background-color: #ccc; opacity: 1;}
+    .swiper-slide{ max-width: 100vw; overflow: hidden; background-size: auto 100%;
+      padding:  0.2rem 0;
+      text-align: center;
+      img{ max-width: 100%; margin: 0 auto;}
+    }
+    .swiper-pagination-bullet{ width: 0.44rem; height: 2px; border-radius:3rem; background-color: #bbb; opacity: 1;}
     .swiper-pagination-bullet-active{ background-color: #a7161d;}
     .swiper-button-next, .swiper-button-prev{}
+    .swiper-pagination{}
   }
 }
 

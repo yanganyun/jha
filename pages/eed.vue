@@ -21,37 +21,13 @@
     <!-- 板块2 -->
     <div class="banner_box swiper-container banner2" id="eed_banner2">
       <div class="swiper-wrapper">
+        
         <div class="swiper-slide swiper-slide1">
           <div class="banner_info_box">
             <div class="banner_info">
               <span class="banner_tag"></span>
-              <b>深圳马蹄山村</b>
-              <h3>城市更新创新模式研究</h3>
-              <p>•用者环境体验的主题场景研究<br>•创新运营的系统服务研究</p>
-              <ul class="banner2_list">
-                <li>
-                  <img src="~/static/img/home/banner2_list1_1.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>项目顶层理念</span>
-                    <span class="block">城市发展目标</span>
-                  </div>
-                </li>
-                <li>
-                  <img src="~/static/img/home/banner2_list1_2.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>创意环境营造</span>
-                    <span class="block">其他社区环境界面</span>
-                  </div>
-                </li>
-                <li>
-                  <img src="~/static/img/home/banner2_list1_3.jpg" alt="">
-                  <div class="banner2_list_text">
-                    <span>创新社区文化</span>
-                    <span class="block">活动事件策划</span>
-                  </div>
-                </li>
-              </ul>
-              <a href="#">点击了解更多</a>
+              <b class="pt1">深圳龙岗公共艺术馆</b>
+              <h3>“龙岗区”三馆一城项目</h3>
             </div>
           </div>
         </div>
@@ -61,8 +37,6 @@
               <span class="banner_tag"></span>
               <b class="pt1">深圳龙岗公共艺术馆</b>
               <h3>“龙岗区”三馆一城项目</h3>
-              <br><br><br><br><br><br>
-              <a href="#">点击了解更多</a>
             </div>
           </div>
         </div>
@@ -70,12 +44,8 @@
           <div class="banner_info_box">
             <div class="banner_info">
               <span class="banner_tag"></span>
-
-              <div class="banner_info_left">
-                <h3>绿地探索中心</h3><br><br>
-                <a href="#">点击了解更多</a>
-              </div>
-              
+              <b class="pt1">深圳龙岗公共艺术馆</b>
+              <h3>“龙岗区”三馆一城项目</h3>
             </div>
           </div>
         </div>
@@ -83,13 +53,21 @@
           <div class="banner_info_box">
             <div class="banner_info">
               <span class="banner_tag"></span>
-              <b class="pt1">嘉定</b>
-              <h3>汽车城文体设施策划运营方案</h3>
-              <br><br><br><br><br><br>
-              <a href="#">点击了解更多</a>
+              <b class="pt1">深圳龙岗公共艺术馆</b>
+              <h3>“龙岗区”三馆一城项目</h3>
             </div>
           </div>
         </div>
+        <div class="swiper-slide swiper-slide5">
+          <div class="banner_info_box">
+            <div class="banner_info">
+              <span class="banner_tag"></span>
+              <b class="pt1">深圳龙岗公共艺术馆</b>
+              <h3>“龙岗区”三馆一城项目</h3>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="swiper-button-prev swiper-button-white"></div>
       <div class="swiper-button-next swiper-button-white"></div>
@@ -389,16 +367,44 @@ export default {
 
   .swiper-slide{
     padding: 1rem 0;
+    min-height: 8rem;
   }
   .swiper-slide1{
-    background: url('~/static/img/home/banner2_list1_bg.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('~/static/img/eed/banner2/1.jpg') no-repeat center center;
+    background-size: auto 100%;
   }
   .swiper-slide2{
-    background: url('~/static/img/home/banner2_list2_bg.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100%;
+    background: url('~/static/img/eed/banner2/2.jpg') no-repeat center center;
+    background-size: auto 100%;
   }
+  .swiper-slide3{
+    background: url('~/static/img/eed/banner2/3.jpg') no-repeat center center;
+    background-size: auto 100%;
+  }
+  .swiper-slide4{
+    background: url('~/static/img/eed/banner2/4.jpg') no-repeat center center;
+    background-size: auto 100%;
+  }
+  .swiper-slide5{
+    background: url('~/static/img/eed/banner2/5.jpg') no-repeat center center;
+    background-size: auto 100%;
+  }
+  .swiper-slide6{
+    background: url('~/static/img/eed/banner2/6.jpg') no-repeat center center;
+    background-size: auto 100%;
+  }
+  .swiper-slide7{
+    background: url('~/static/img/eed/banner2/7.jpg') no-repeat center center;
+    background-size: auto 100%;
+  }
+  .swiper-slide8{
+    background: url('~/static/img/eed/banner2/8.jpg') no-repeat center center;
+    background-size: auto 100%;
+  }
+}
+
+
+.banner44{
   .swiper-slide3{
     background: url('~/static/img/home/banner2_list3_bg.jpg') no-repeat center center;
     background-size: cover;
@@ -416,13 +422,7 @@ export default {
       
     }
   }
-  .swiper-slide4{
-    background: url('~/static/img/home/banner2_list4_bg.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100%;
-  }
 }
-
 
 
 #eed_banner2{
@@ -435,63 +435,68 @@ export default {
 }
 
 @media only screen and (max-width: 900px) {
-
-  .banner_box{
-
-    .swiper-slide{
-      .float_1,.float_2{
-        display: none;
-      }
-    }
-
-    .banner_info_box{ 
+  .eed{
+    .banner_box{
       
-      width: 100%;
-      .banner_info{
-        padding: 0 8%;
-        margin-left: 0;
+        
+        .swiper-slide{
+          background-size: 100% auto !important;
+          .float_1,.float_2{
+            display: none;
+          }
+          
+        }
+
+      .banner_info_box{ 
+        
         width: 100%;
-        left: 0;
-        b{ font-size: 0.22rem;}
-        h3{ font-size: 0.3rem;}
-        p{ font-size: 0.18rem;}
+        .banner_info{
+          padding: 0 8%;
+          margin-left: 0;
+          width: 100%;
+          left: 0;
+          b{ font-size: 0.22rem;}
+          h3{ font-size: 0.3rem;}
+          p{ font-size: 0.18rem;}
+        }
       }
+      img{ width: 130%;}
+      
     }
-    img{ width: 130%;}
-    
-  }
-  .banner1{
-    .banner1_info{
-      left: 45%;
-      padding-right: 0.2rem;
-      p{
-        i{
-          margin-top: 0.12rem;
+    .banner1{
+      .banner1_info{
+        left: 45%;
+        padding-right: 0.2rem;
+        p{
+          i{
+            margin-top: 0.12rem;
+          }
         }
       }
     }
-  }
-  
-  .banner_bg_black{
-    .banner_info_box{ 
-      .banner_info{ 
-        top: 0.2rem;
-        b{ font-size: 0.2rem; margin-top:0.2rem ;}
-        h3{ font-size: 0.28rem;}
-        h4{font-size: 0.2rem; margin-top: 0.05rem;}
-        p{ font-size: 0.16rem; margin-top: 0.2rem;}
-      } 
-    }
     
+    .banner_bg_black{
+      .banner_info_box{ 
+        .banner_info{ 
+          top: 0.2rem;
+          b{ font-size: 0.2rem; margin-top:0.2rem ;}
+          h3{ font-size: 0.28rem;}
+          h4{font-size: 0.2rem; margin-top: 0.05rem;}
+          p{ font-size: 0.16rem; margin-top: 0.2rem;}
+        } 
+      }
+      
+    }
   }
+
 }
 
 </style>
 <style lang="scss">
 .eed{
   .swiper-container{
-    .swiper-slide{ max-width: 100vw; overflow: hidden; background-size: cover;}
-    .swiper-pagination-bullet{ width: 0.44rem; height: 2px; border-radius:3rem; background-color: #fff; opacity: 1;}
+    .swiper-slide{ max-width: 100vw; overflow: hidden; background-size: auto 100%;}
+    .swiper-pagination-bullet{ width: 0.44rem; height: 2px; border-radius:3rem; background-color: #ccc; opacity: 1;}
     .swiper-pagination-bullet-active{ background-color: #a7161d;}
     .swiper-button-next, .swiper-button-prev{}
   }

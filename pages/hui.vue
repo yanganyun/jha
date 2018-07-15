@@ -178,7 +178,7 @@ export default {
 <style lang="scss" scoped>
 
   .hui{
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
     .footer_all{
       margin-top: 1rem;
     }
@@ -199,7 +199,7 @@ export default {
           -webkit-transform: translateY(-6px);
         }
       }
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.5rem;
     }
     .hui_list_box{
       max-width: 1200px;
@@ -208,8 +208,8 @@ export default {
         //float: left;
         li{
           float: left;
-          width: 23%;
-          margin: 1% 1%;
+          width: 24%;
+          margin: 0.5% 0.5%;
           position: relative;
           -webkit-transition:all 0.2s linear 0s;
           transition:all 0.2s linear 0s;

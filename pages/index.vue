@@ -136,7 +136,12 @@
 提供改造优化、空间设计、设备专业协调、软装配置、现场督导的全程服务。<br>
 并开展“集跃创造” “尤物定制”的研发建造与市场运营。"</p>
       <div class="aboutus_icon">
-        <img src="~/static/img/home/aboutus_icon.png" alt="">
+        <span><img src="~/static/img/icon/about1.png" alt=""></span>
+        <span><img src="~/static/img/icon/about2.png" alt=""></span>
+        <span><img src="~/static/img/icon/about3.png" alt=""></span>
+        <span><img src="~/static/img/icon/about4.png" alt=""></span>
+        <span><img src="~/static/img/icon/about5.png" alt=""></span>
+        <span><img src="~/static/img/icon/about6.png" alt=""></span>
       </div>
     </div>
 
@@ -515,6 +520,15 @@ export default {
   .aboutus_icon{
     text-align: center;
     margin-top: 0.55rem;
+    span{
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 0.05rem;
+      padding: 0.1rem;
+      transition: all 0.2s ease-out 0s;
+      -webkit-transition: all 0.2s ease-out 0s;
+    }
+    
     img{
       max-width: 100%;
     }
@@ -694,6 +708,14 @@ export default {
       } 
     }
     
+  }
+
+  .aboutus{
+    .aboutus_icon{
+      span{
+        width: 0.8rem;
+      }
+    }
   }
 }
 

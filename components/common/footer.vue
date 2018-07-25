@@ -13,7 +13,7 @@
         <p>版权所有© JHA DESIGN</p>
       </div>
       <div class="footer_info">
-        Copyright © 2018 www.jha-design.com 沪ICP备14001709号 | 互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com
+        Copyright © 2018 www.jha-design.com 沪ICP备14001709号 | 互联网违法和不良信息举报电话：0571-81683755
       </div>
     </div>
   </div>

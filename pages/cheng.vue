@@ -273,6 +273,7 @@ export default {
           width: 100%;
           -webkit-transition:all 0.3s linear 0s;
           transition:all 0.3s linear 0s;
+          border-radius: 50%;
         }
       }
       
@@ -408,9 +409,24 @@ export default {
 
 @media only screen and (max-width: 900px) {
   .aboutus{
+    p{
+      font-size: 0.2rem;
+    }
     .aboutus_icon{
       span{
         width: 0.8rem;
+      }
+    }
+    .about_icon_content{
+      h4{
+        font-size: 0.28rem;
+      }
+      b{
+        font-size: 0.26rem;
+      }
+      p{
+        font-size: 0.22rem;
+        line-height: 0.36rem;
       }
     }
   }
@@ -444,18 +460,18 @@ export default {
           }
         }
         .xueli{
-          margin-top: 0.15rem;
+          margin-top: 0.1rem;
           span{
             display: block;
-            font-size: 0.24rem;
+            font-size: 0.26rem;
             color: #999;
           }
         }
         p{
-          margin-top: 0.2rem;
+          margin-top: 0.15rem;
           font-size: 0.24rem;
           color: #444;
-          line-height: 0.28rem;
+          line-height: 0.36rem;
         }
       }
     }

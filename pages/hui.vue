@@ -393,6 +393,14 @@ export default {
           margin: 0.2rem 3%;
           .info_box{
             opacity: 1;
+            padding: 0.1rem 0.2rem 0.1rem;
+            h4{
+              font-size: 0.28rem;
+            }
+            p{
+              margin-top: 0.1rem;
+              font-size: 0.24rem;
+            }
           }
           &:hover{
             transform: scale(1);

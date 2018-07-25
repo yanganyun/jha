@@ -422,7 +422,7 @@ export default {
             font-size: 0.26rem;
           }
           p{
-            font-size: 0.22rem;
+            font-size: 0.18rem;
           }
         }
       }
@@ -434,7 +434,29 @@ export default {
         float: none !important;
       }
       .team_detail{
-        
+        h4{
+          color: #010101;
+          font-size: 0.5rem;
+          span{
+            color: #444;
+            font-size: 0.3rem;
+            margin-left: 0.15rem;
+          }
+        }
+        .xueli{
+          margin-top: 0.15rem;
+          span{
+            display: block;
+            font-size: 0.24rem;
+            color: #999;
+          }
+        }
+        p{
+          margin-top: 0.2rem;
+          font-size: 0.24rem;
+          color: #444;
+          line-height: 0.28rem;
+        }
       }
     }
   }

@@ -131,19 +131,20 @@ export default {
     }
   },
   mounted() {
-    
+    var index = this.$route.query.index;
 
     //team
     setTimeout(function(){
       var mySwiper = new Swiper('#home_team', {
-        autoplay: 2500,//可选选项，自动滑动
+        //autoplay: 2500,//可选选项，自动滑动
+        initialSlide: parseInt(index/4),
         loop : false,
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next'
       });
     },400);
 
-    var index = this.$route.query.index;
+    
     if(index>=0){
       this.showDetail(index);
       var doc = document.querySelectorAll('html,body');

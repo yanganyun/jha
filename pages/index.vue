@@ -248,7 +248,7 @@ export default {
 
 
     var mySwiper3 = new Swiper('#home_team', {
-        autoplay: 5000,//可选选项，自动滑动
+        //autoplay: 5000,//可选选项，自动滑动
         loop : false,
         prevButton:'.swiper-button-prev',
         nextButton:'.swiper-button-next'

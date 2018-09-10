@@ -34,7 +34,16 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <ul class="team_list">
-              <li @click="showDetail(index)" v-for="(item,index) in listData" :key="index">
+              <li @click="showDetail(index)" v-for="(item,index) in listData" :key="index" v-if="index<4">
+                <div><img :src="'http://pic.jha-design.com/team/'+item.pinyin+'.jpg'" alt=""></div>
+                <b>{{item.name}}</b>
+                <p>{{item.zhiwei}}</p>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="team_list">
+              <li @click="showDetail(index)" v-for="(item,index) in listData" :key="index" v-if="index>=4&&index<8">
                 <div><img :src="'http://pic.jha-design.com/team/'+item.pinyin+'.jpg'" alt=""></div>
                 <b>{{item.name}}</b>
                 <p>{{item.zhiwei}}</p>
@@ -42,8 +51,8 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="swiper-button-prev swiper-button-black"></div>
-        <div class="swiper-button-next swiper-button-black"></div> -->
+        <div class="swiper-button-prev swiper-button-black"></div>
+        <div class="swiper-button-next swiper-button-black"></div>
       </div>
 
       <!-- 人员介绍 -->
@@ -487,5 +496,10 @@ export default {
     .swiper-pagination-bullet-active{ background-color: #a7161d;}
     .swiper-button-next, .swiper-button-prev{}
   }
+
+  
+}
+.cheng{
+  .swiper-button-disabled{ display: none;}
 }
 </style>

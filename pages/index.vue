@@ -14,8 +14,8 @@
               <a href="#">点击了解更多</a>
             </div>
           </div>
-          <div class="float_1"></div>
-          <div class="float_2"></div>
+          <!-- <div class="float_1"></div>
+          <div class="float_2"></div> -->
         </div>
         <div class="swiper-slide swiper-slide2">
           <div class="banner_bg"></div>
@@ -26,8 +26,8 @@
                 <a href="#">点击了解更多</a>
             </div>
           </div>
-          <div class="float_1"></div>
-          <div class="float_2"></div>
+          <!-- <div class="float_1"></div> -->
+          <!-- <div class="float_2"></div> -->
         </div>
         <div class="swiper-slide swiper-slide3">
           <div class="banner_bg"></div>
@@ -38,8 +38,8 @@
                 <a href="#">点击了解更多</a>
             </div>
           </div>
-          <div class="float_1"></div>
-          <div class="float_2"></div>
+          <!-- <div class="float_1"></div>
+          <div class="float_2"></div> -->
         </div>
       </div>
       <div class="swiper-button-prev swiper-button-white"></div>
@@ -363,18 +363,18 @@ export default {
   }
   .swiper-slide1{
     background: url('~/static/img/home/banner1_1.jpg') no-repeat center center;
-    .float_1{ background: url('http://pic.jha-design.com/hui/nanjing_langting/2.jpg') no-repeat center center; background-size: cover;}
-    .float_2{ background: url('http://pic.jha-design.com/hui/nanjing_langting/5.jpg') no-repeat center center; background-size: cover;}
+    // .float_1{ background: url('http://pic.jha-design.com/hui/nanjing_langting/2.jpg') no-repeat center center; background-size: cover;}
+    // .float_2{ background: url('http://pic.jha-design.com/hui/nanjing_langting/5.jpg') no-repeat center center; background-size: cover;}
   }
   .swiper-slide2{
     background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/1.jpg') no-repeat center center;
-    .float_1{ background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/4.jpg') no-repeat center center; background-size: cover;}
-    .float_2{ background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/5.jpg') no-repeat center center; background-size: cover;}
+    // .float_1{ background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/4.jpg') no-repeat center center; background-size: cover;}
+    // .float_2{ background: url('http://pic.jha-design.com/hui/anhui_hanyuelou/5.jpg') no-repeat center center; background-size: cover;}
   }
   .swiper-slide3{
     background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/8.jpg') no-repeat center center;
-    .float_1{ background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/11.jpg') no-repeat center center; background-size: cover;}
-    .float_2{ background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/23.jpg') no-repeat center center; background-size: cover;}
+    // .float_1{ background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/11.jpg') no-repeat center center; background-size: cover;}
+    // .float_2{ background: url('http://pic.jha-design.com/hui/fuzhou_huanqiujinrong/23.jpg') no-repeat center center; background-size: cover;}
   }
   .swiper-slide-active{
     .float_1{

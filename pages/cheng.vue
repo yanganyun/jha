@@ -41,7 +41,7 @@
               </li>
             </ul>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" v-if="index>=4&&index<8">
             <ul class="team_list">
               <li @click="showDetail(index)" v-for="(item,index) in listData" :key="index" v-if="index>=4&&index<8">
                 <div><img :src="'http://pic.jha-design.com/team/'+item.pinyin+'.jpg'" alt=""></div>

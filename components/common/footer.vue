@@ -13,7 +13,7 @@
         <p>版权所有© JHA DESIGN</p>
       </div>
       <div class="footer_info">
-        Copyright © 2018 www.jha-design.com 沪ICP备14001709号 | 互联网违法和不良信息举报电话：0571-81683755
+        Copyright © 2018 www.jha-design.com <a href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备18020111号-1</a>
       </div>
     </div>
   </div>
